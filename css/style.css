@@ -1,9 +1,11 @@
 /********** Template CSS **********/
 :root {
     --primary: #00B074;
-    --secondary: #2B9BFF;
+    --secondary: #38B6FF;
     --light: #EFFDF5;
     --dark: #2B3940;
+    --gray: #828282;
+    --pink: #9e2222;
 }
 
 .back-to-top {
@@ -29,6 +31,16 @@
     opacity: 1;
 }
 
+.logo{
+    font-size: 30px;
+    position: relative;
+    
+}
+.logoimg{
+    display: block;
+    position: relative;
+
+}
 
 /*** Button ***/
 .btn {
@@ -98,7 +110,7 @@
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 @media (max-width: 991.98px) {
@@ -119,7 +131,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
+    color: var(--gray);
     font-weight: 500;
 }
 
@@ -155,7 +167,7 @@
 .page-header .container {
     position: relative;
     padding: 45px 0 45px 35px;
-    border-left: 15px solid var(--primary);
+    border-left: 15px solid var(--secondary);
 }
 
 .header-carousel .container::before,
@@ -168,7 +180,7 @@
     left: 0;
     width: 100px;
     height: 15px;
-    background: var(--primary);
+    background: var(--secondary);
 }
 
 .header-carousel .container::after,
