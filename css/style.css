@@ -170,6 +170,7 @@
     padding-right: 0;
     border-right: none;
 }
+<<<<<<< HEAD
 .persons {
     padding: 0;
     margin: 0; }
@@ -184,3 +185,5 @@
     .persons li a img {
         border-radius: 50%;
         max-width: 100%; }
+=======
+>>>>>>> d67e2a6ae8a083335226bb5407078a435ab4b0c5
