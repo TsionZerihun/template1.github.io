@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>bs4 seller cards - Bootdey.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<!-- Template Stylesheet -->
+  <link href="./dashboard.css" rel="stylesheet">
+  <link href="../css/style1.css" rel="stylesheet">
+  <link href="../css/profile.css" rel="stylesheet">
+  <link href="../css/post.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <img class="logoimg flex-shrink-0 img-fluid rounded logoimg" src="../img/logo1.png" alt="" style="width: 110px; height: 110px;">
+                <h1 class="logo m-0 text-secondary">Maroset</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-bell"></i></a>
+                        <ul
+                            class="dropdown-menu dropdown-menu-end"
+                            >
+                            <li>
+                            <a class="dropdown-item" href="#">Some news</a>
+                            </li>
+                            <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                            </li>
+                            <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><img
+                            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                            class="rounded-circle"
+                            height="25"
+                            width="25"
+                            alt="Black and White Portrait of a Man"
+                            loading="lazy"
+                          /></a>
+                          <ul
+                          class="dropdown-menu dropdown-menu-end"
+                          aria-labelledby="navbarDropdownMenuAvatar"
+                          >
+                          <li>
+                          <a class="dropdown-item" href="#">My profile</a>
+                          </li>
+                          <li>
+                          <a class="dropdown-item" href="#">Settings</a>
+                          </li>
+                          
+                      </ul>
+                        
+                    </div>
+                    <a href="index.html" class="nav-item nav-link">Log Out</a>
+                </div>
+            </div>
+        </nav>
+
+           <!--Four-Cards -->
+           <main class="py-6 bg-surface-secondary">
+            <div class="container-fluid">
+                <!-- Card stats -->
+                <div class="row g-6 mb-6">
+                <!-- My-Profile -->
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card shadow border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="h6 font-semibold text-muted text-sm d-block mb-2">Edit Profile</span>
+                                        <span class="h3 font-bold mb-0">My Profile</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
+                                            <i class="bi bi-credit-card"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-0 text-sm">
+                                    <span class="text-nowrap text-xs text-muted"><a href="#">
+                                      Complete/Update Profile
+                                      <span class="badge badge-pill bg-soft-success text-success me-2">
+                                        <i class="bi bi-arrow-right me-1"></i>
+                                    </span>
+                                  </a>
+                                    </span>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Apply-Now -->
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card shadow border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="h6 font-semibold text-muted text-sm d-block mb-2">Browse Jobs and Apply</span>
+                                        <span class="h3 font-bold mb-0">JOBS</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon icon-shape bg-primary text-white text-lg rounded-circle">
+                                            <i class="bi bi-people"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-0 text-sm">
+                                  <span class="text-nowrap text-xs text-muted"><a href="#">
+                                    Apply Now
+                                    <span class="badge badge-pill bg-soft-success text-success me-2">
+                                      <i class="bi bi-arrow-right me-1"></i>
+                                    </span>
+                                    </a>
+                                  </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 <!-- Apply-Now -->
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card shadow border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="h6 font-semibold text-muted text-sm d-block mb-2">Create a Job</span>
+                                        <span class="h3 font-bold mb-0">Find a Talent</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon icon-shape bg-info text-white text-lg rounded-circle">
+                                            <i class="bi bi-clock-history"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-0 text-sm">
+                                    <span class="text-nowrap text-xs text-muted"><a href="#">
+                                        View Posted Jobs/Post New Job
+                                    <span class="badge badge-pill bg-soft-danger text-danger me-2">
+                                        <i class="bi bi-arrow-right me-1"></i>
+                                    </span>
+                                    </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 <!-- Apply-Now -->
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card shadow border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="h6 font-semibold text-muted text-sm d-block mb-2">favorite jobs</span>
+                                        <span class="h3 font-bold mb-0">Applied Jobs</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon icon-shape bg-warning text-white text-lg rounded-circle">
+                                            <i class="bi bi-minecart-loaded"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-0 text-sm">
+                                    <span class="text-nowrap text-xs text-muted"><a href="#">
+                                    Browse Now
+                                    <span class="badge badge-pill bg-soft-success text-success me-2">
+                                        <i class="bi bi-arrow-right me-1"></i>
+                                    </span>
+                                    </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <div class="container">
+        <div class="row">
+
+        <div class="col-md-6">
+        <div class="card user-card">
+        <div class="card-header">
+        <h5>Profile</h5>
+        </div>
+        <div class="card-block">
+        <div class="user-image">
+        <img src="" class="img-radius" alt="User-Profile-Image">
+        </div>
+        <h6 class="f-w-600 m-t-25 m-b-10">POST AS A STARTUP</h6>
+        <p class="text-muted">Fill out below information to post jpb</p>
+        <hr>
+        <!-- Founder(s) name-->
+        <div class="form-group">
+            <label for="fullName"> Founder(s) name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+        </div>
+        <!-- Startup address-->
+        <div class="form-group">
+            <label for="Street">Startup address</label>
+            <input type="name" class="form-control" id="Street" placeholder="Enter Street">
+        </div>
+        <!-- Phone Num-->
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+        </div>
+        <!-- Desription-->
+            <div class="form-group">
+            <label for="fullName">Description</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Brief description of the startup">
+        </div>
+        <!-- Social-Media-->
+        <h6 class="f-w-600 m-t-25 m-b-10">Select social media presence</h6>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    <i class="fa fa-facebook text-facebook"></i>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                <i class="fa fa-twitter text-twitter"></i>
+                </label>
+            </div>
+            
+        </div>
+
+        <div class="bg-c-green counter-block m-t-10 p-20">
+        <div class="row">
+        <div class="col-4">
+        <i class="fa fa-comment"></i>
+        <p>1256</p>
+        </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-outline-secondary">Post Now</button>
+
+        </div>
+        <div class="col-4">
+        <i class="fa fa-suitcase"></i>
+        <p>189</p>
+        </div>
+        </div>
+        </div>
+        <hr>
+        <div class="row justify-content-center user-social-link">
+        <div class="col-auto"><a href="#!"><i class="fa fa-facebook text-facebook"></i></a></div>
+        <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
+        <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card user-card">
+        <div class="card-header">
+        <h5>Profile</h5>
+        </div>
+        <div class="card-block">
+            <div class="user-image">
+            <img src="" class="img-radius" alt="User-Profile-Image">
+            </div>
+            <h6 class="f-w-600 m-t-25 m-b-10">POST AS A LICENCED COMPANY</h6>
+            <p class="text-muted">Fill out below information to post jpb</p>
+            <hr>
+            <!-- Founder(s) name-->
+            <div class="form-group">
+                <label for="fullName"> Tax identification number/TIN</label>
+                <input type="text" class="form-control" id="phone" placeholder="TIN">
+            </div>
+            <!-- Startup address-->
+            <div class="form-group">
+                <label for="Street"> Trade license</label>
+                <input type="name" class="form-control" id="Street" placeholder="license here">
+            </div>
+        
+            <!-- Desription-->
+                <div class="form-group">
+                <label for="fullName">Description</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Brief description of the business">
+            </div>
+            <br>
+            <br>
+            <hr>
+            <!-- Social-Media-->
+            <h6 class="f-w-600 m-t-25 m-b-10">Select social media presence</h6>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        <i class="fa fa-facebook text-facebook"></i>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    <i class="fa fa-twitter text-twitter"></i>
+                    </label>
+                </div>
+                
+            </div>
+            
+            <div class="bg-c-green counter-block m-t-10 p-20">
+            <div class="row">
+            <div class="col-4">
+            <i class="fa fa-comment"></i>
+            <p>1256</p>
+            </div>
+            <div class="col-4">
+                <button type="button" class="btn btn-outline-secondary">Post Now</button>
+            
+            </div>
+            <div class="col-4">
+            <i class="fa fa-suitcase"></i>
+            <p>189</p>
+            </div>
+            </div>
+            </div>
+            <hr>
+            <div class="row justify-content-center user-social-link">
+            <div class="col-auto"><a href="#!"><i class="fa fa-facebook text-facebook"></i></a></div>
+            <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
+            <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+         <!-- Footer Start -->
+         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="">About Us</a>
+                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="">Our Services</a>
+                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="https://telegra.ph/Terms-of-service-and-policies-07-18">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Contact</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Addis Ababa, Ethiopia</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+251 xxx xxxx</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>contact@maroset.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Signup to get updates on new job posts.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" style="background-color:#38B6FF;" class="btn btn-secondary py-1 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">MAROSET</a>, All Right Reserved. 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Footer End -->
+    
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
